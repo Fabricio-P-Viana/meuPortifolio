@@ -1,0 +1,68 @@
+:root{
+    --cor-principal: #1fbee1;
+    --cor-backgroud-principal: #212121;
+    --cor-monocromatica: #cbcbcb;
+    --cor-texto: #fff;
+}
+
+.txt-animado{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.txt-animado span.efeitoLetras{
+    position: relative;
+}
+
+.txt-animado span.efeitoLetras::before{
+    content: "";
+    color:var(--cor-principal);
+    animation: palavras 20s infinite;
+}
+
+.txt-animado span.efeitoLetras::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid var(--cor-principal);
+    right: -10px;
+    animation: cursor .8s infinite, digitando 20s steps(15) infinite;
+    width: calc(100% + 18px);
+    background-color: var(--cor-backgroud-principal);
+    border-radius: 50px;
+    border: 2px solid rgb(80, 232, 240);
+}
+
+@keyframes digitando {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 18px);
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px var(--cor-backgroud-principal);
+    }
+}
+
+@keyframes palavras {
+    0%,20%{
+        content: "Fabricio Viana";
+    }
+    21%,40%{
+        content: "Desenvolvedor Web";
+    }
+    41%,60%{
+        content: "Programador";
+    }
+    61%,80%{
+        content: "Inovador";
+    }
+    81%,100%{
+        content: "Sonhador";
+    }
+}
+

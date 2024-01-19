@@ -1,0 +1,128 @@
+.Tecnologias {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: auto;
+    background-color: #212121;
+    color: #fff;
+    padding: 20px 200px;
+}
+
+.parentTec {
+  display: grid;
+  grid-template-columns: 80px repeat(3, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  z-index: 1;
+  flex-wrap: wrap;
+  padding: 20px;
+  }
+  
+  div.skils-bar{
+    background-color: white;
+    border: #212121 solid 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    align-self: left;
+    margin: 0px 90px;
+  }
+
+  .nvl-skills{
+    background: var(--cor-principal) ;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .ten-per-cent{width: 10%;}
+  .twenty-per-cent{width: 20%;}
+  .thirty-per-cent{width: 30%;}
+  .forty-per-cent{width: 40%;}
+  .fifty-per-cent{width: 50%;}
+  .sixty-per-cent{width: 60%;}
+  .seventy-per-cent{width: 70%;}
+  .eighty-per-cent{width: 80%;}
+  .ninety-per-cent{width: 90%;}
+  .hundred-per-cent{width: 100%;}
+
+
+  .parentTec div img{
+    height:100px;
+    margin: 0px 90px;
+  }
+
+  .parentTec div .tituloTec{
+    font-size: 100px;
+    word-break: break-all;
+    text-align: center;
+    color:var(--cor-principal); 
+  }
+
+  .parentTec .basePorcentagem {
+    flex: 1;
+    align-self: flex-end;
+  }
+
+  .parentTec div .porcentagem {
+    text-align: end;
+    padding: 0px 90px;
+  }
+
+  .parentTec .div1 { grid-area: 1 / 1 / 17 / 2;}
+  .parentTec .div2 { grid-area: 1 / 2 / 2 / 4; }
+  .parentTec .div3 { grid-area: 2 / 2 / 3 / 5; }
+  .parentTec .div4 { grid-area: 1 / 4 / 2 / 5; }
+  .parentTec .div5 { grid-area: 3 / 2 / 4 / 4; }
+  .parentTec .div6 { grid-area: 3 / 4 / 4 / 5; }
+  .parentTec .div7 { grid-area: 4 / 2 / 5 / 5; }
+  .parentTec .div8 { grid-area: 5 / 2 / 6 / 4; }
+  .parentTec .div9 { grid-area: 5 / 4 / 6 / 5; }
+  .parentTec .div10 { grid-area: 6 / 2 / 7 / 5; }
+  .parentTec .div11 { grid-area: 7 / 2 / 8 / 4; }
+  .parentTec .div12 { grid-area: 7 / 4 / 8 / 5; }
+  .parentTec .div13 { grid-area: 8 / 2 / 9 / 5; }
+  .parentTec .div14 { grid-area: 9 / 2 / 10 / 4; }
+  .parentTec .div15 { grid-area: 9 / 4 / 10 / 5; }
+  .parentTec .div16 { grid-area: 10 / 2 / 11 / 5; }
+  .parentTec .div17 { grid-area: 11 / 2 / 12 / 4; }
+  .parentTec .div18 { grid-area: 11 / 4 / 12 / 5; }
+  .parentTec .div19 { grid-area: 12 / 2 / 13 / 5; }
+  .parentTec .div20 { grid-area: 13 / 2 / 14 / 4; }
+  .parentTec .div21 { grid-area: 13 / 4 / 14 / 5; }
+  .parentTec .div22 { grid-area: 14 / 2 / 15 / 5; }
+  .parentTec .div23 { grid-area: 15 / 2 / 16 / 4; }
+  .parentTec .div24 { grid-area: 15 / 4 / 16 / 5; }
+  .parentTec .div25 { grid-area: 16 / 2 / 17 / 5; }
+
+@media (max-width: 992px) {
+  .Tecnologias{
+    padding: 20px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .Tecnologias{
+    padding: 10px 10px;
+  }
+  .parentTec {
+    display: grid;
+    grid-template-columns:repeat(20px, 3, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    z-index: 1;
+    flex-wrap: wrap;
+    padding: 10px;
+    }
+    .parentTec div .tituloTec{
+      display: none;
+    }
+    .parentTec div .porcentagem {
+      text-align: end;
+      padding: 0px 90px;
+    }
+    .parentTec div img{
+      height:40px;
+      margin: 0px 20px;
+    }
+}

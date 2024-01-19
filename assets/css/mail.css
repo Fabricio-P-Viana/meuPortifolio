@@ -1,0 +1,78 @@
+.mail {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px 200px;
+    text-align: center;
+
+}
+
+.parentEmail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.parentEmail .div1 { grid-area: 1 / 1 / 2 / 4; }
+.parentEmail .div2 { grid-area: 2 / 1 / 4 / 4; }
+.parentEmail .div3 { grid-area: 4 / 1 / 5 / 4; }
+
+.parentEmail div h1{
+    font-size: 2.5em;
+}
+
+.parentEmail div input#email{
+    height: 50px;
+    width: 500px;
+    word-wrap: break-word;
+}
+
+.parentEmail div textarea#message{
+    height: 150px;
+    width: 500px;
+    max-height: 150px;
+    max-width: 500px;
+    min-height: 150px;
+    min-width: 500px;
+}
+.parentEmail div button{
+    height: 50px;
+    width: 500px;
+    background-color: var(--cor-principal);
+    color: #fff;
+    font-size: 1.4em;
+}
+
+@media (max-width: 992px) {
+    .mail{
+    padding: 20px 40px;
+    }
+    .parentEmail{
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .parentEmail div textarea#message{
+        height: 100px;
+        width: 300px;
+        max-height: 100px;
+        max-width: 300px;
+        min-height: 100px;
+        min-width: 300px;
+    }
+    .parentEmail div input#email{
+        height: 50px;
+        width: 300px;
+        word-wrap: break-word;
+    }
+    .parentEmail div button{
+        height: 50px;
+        width: 300px;
+        background-color: var(--cor-principal);
+        color: #fff;
+        font-size: 1.4em;
+    }
+}

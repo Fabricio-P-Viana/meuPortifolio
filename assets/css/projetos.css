@@ -1,0 +1,118 @@
+.Projetos {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: auto;
+    background-color: #212121;
+    color: #fff;
+    padding: 20px 200px;
+}
+
+
+.parentProjetos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 30px 1fr 30px repeat(2, 1fr) 30px 1fr 30px repeat(2, 1fr) 30px 1fr 30px repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    z-index: 1;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.parentProjetos div .imagens{
+    overflow: hidden;
+}
+
+.parentProjetos div img{
+    width: 100%;
+}
+.parentProjetos div .videoAuto {
+    width: 100%;
+}
+
+.parentProjetos div .nomePequenoProjeto {
+    color:var(--cor-principal);
+    font-size: 20px;
+}
+
+.parentProjetos div .nomeTituloProjeto {
+    font-size: 100px;
+}
+    
+    .parentProjetos .div1 { grid-area: 1 / 1 / 2 / 3; }
+    .parentProjetos .div2 { grid-area: 2 / 1 / 3 / 3; }
+    .parentProjetos .div3 { grid-area: 2 / 4 / 3 / 6; }
+    .parentProjetos .div4 { grid-area: 4 / 4 / 5 / 6; }
+    .parentProjetos .div5 { grid-area: 4 / 1 / 6 / 3; }
+    .parentProjetos .div6 { grid-area: 3 / 1 / 4 / 2; }
+    .parentProjetos .div7 { grid-area: 6 / 1 / 7 / 3; }
+    .parentProjetos .div8 { grid-area: 7 / 1 / 8 / 3; }
+    .parentProjetos .div9 { grid-area: 8 / 1 / 9 / 2; }
+    .parentProjetos .div10 { grid-area: 9 / 1 / 11 / 3; }
+    .parentProjetos .div11 { grid-area: 7 / 4 / 8 / 6; }
+    .parentProjetos .div12 { grid-area: 9 / 4 / 10 / 6; }
+    .parentProjetos .div13 { grid-area: 11 / 1 / 12 / 3; }
+    .parentProjetos .div14 { grid-area: 12 / 1 / 13 / 3; }
+    .parentProjetos .div15 { grid-area: 13 / 1 / 14 / 2; }
+    .parentProjetos .div16 { grid-area: 14 / 1 / 16 / 3; }
+    .parentProjetos .div17 { grid-area: 14 / 4 / 15 / 6; }
+    .parentProjetos .div18 { grid-area: 12 / 4 / 13 / 6; }
+
+@media (max-width: 1024px) {
+    .parentProjetos div .nomeTituloProjeto {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .Projetos{
+        padding: 10px 30px;
+    }
+    .parentProjetos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 20px 1fr 20px repeat(2, 1fr) 20px 1fr 20px repeat(2, 1fr) 20px 1fr 20px repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        z-index: 1;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+}
+@media (max-width: 768px) {
+    .parentProjetos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 20px 1fr 20px repeat(2, 1fr) 20px 1fr 20px repeat(2, 1fr) 20px 1fr 20px repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .parentProjetos .div1 { grid-area: 1 / 1 / 2 / 3; }
+        .parentProjetos .div2 { grid-area: 2 / 1 / 3 / 4; }
+        .parentProjetos .div6 { grid-area: 3 / 1 / 4 / 2; }
+        .parentProjetos .div5 { grid-area: 4 / 1 / 6 / 4; }
+        .parentProjetos .div7 { grid-area: 6 / 1 / 7 / 3; }
+        .parentProjetos .div8 { grid-area: 7 / 1 / 8 / 4; }
+        .parentProjetos .div9 { grid-area: 8 / 1 / 9 / 2; }
+        .parentProjetos .div10 { grid-area: 9 / 1 / 11 / 4; }
+        .parentProjetos .div13 { grid-area: 11 / 1 / 12 / 3; }
+        .parentProjetos .div14 { grid-area: 12 / 1 / 13 / 4; }
+        .parentProjetos .div15 { grid-area: 13 / 1 / 14 / 2; }
+        .parentProjetos .div16 { grid-area: 14 / 1 / 16 / 4; }
+    .Projetos{
+        padding: 20px 60px;
+    }
+    .parentProjetos div .nomeTituloProjeto {
+        font-size: 50px;
+    }
+    .imagens{
+        display: none;
+    }
+    .parentProjetos div ul li{
+        font-size: .7em;
+    }
+    
+}
